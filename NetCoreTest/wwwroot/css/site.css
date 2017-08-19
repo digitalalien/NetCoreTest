@@ -1,0 +1,100 @@
+﻿#main-content{
+    transition: margin-left .5s;
+    padding: 70px 20px 20px 20px;
+    margin-left: 250px;
+}
+  
+.main-header{
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .main-header, .sidenav{
+        position: fixed;
+    }
+
+    .main-header {
+        max-height: 100px;
+        z-index: 1030;
+        background-color: #e8f2f6;
+    }
+    .main-header .logo {
+        display: block;
+        float: left;
+        height: 50px;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+        width: 230px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        transition: width 0.3s ease-in-out;
+        padding: 0px 15px;
+        overflow: hidden;
+    }
+
+    .main-header .navbar {
+        margin-bottom: 0px;
+        margin-left: 230px;
+        min-height: 50px;
+        transition: margin-left 0.3s ease-in-out;
+        border-width: initial;
+        border-style: none;
+        border-color: initial;
+        border-image: initial;
+        border-radius: 0px;
+    }
+        .main-header .sidenav-toggle {
+            float: left;
+            background-color: transparent;
+            background-image: none;
+            font-family: fontAwesome;
+            padding: 15px;
+        }
+/*Side Navigation Menu*/
+.sidenav {
+    min-height: 100%;
+    width: 250px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    overflow-x: hidden; /*disables horizontal scroll*/
+    padding: 50px 10px 10px 10px;
+    transition: transform 0.3s ease-in-out, width 0.3s ease-in-out; /* seconds to transition slide out nav*/
+}
+/*Side Nav Menu links*/
+.sidenav ul{
+    padding: 0;
+}
+.sidenav ul > li{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #111;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav ul > li a{
+    display: block;
+}
+    .sidenav .menu:hover, .sidenav .menu:active, .sidenav .menu:focus {
+        background-color: #e8f2f6;
+        color: #808080;
+    }
+
+    .sidenav .menu a:hover{
+        text-decoration: none;
+    }
+
+/*Small Screen*/
+@media screen and (max-height: 450px){
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav ul > li{
+        font-size: 14px;
+    }
+}
